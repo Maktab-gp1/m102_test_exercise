@@ -4,11 +4,11 @@ import unittest
 # write your tests here
 
 class TestShoppingCart(unittest.TestCase):
-    def __init__(self,methodName:str = "runTest"):
-        super().__init__(methodName)
-        self.obj = ShoppingCart()
-    # def test_setup(self):
+    # def __init__(self,methodName:str = "runTest"):
+    #     super().__init__(methodName)
     #     self.obj = ShoppingCart()
+    def setUp(self):
+        self.obj = ShoppingCart()
     
     def test_add_item(self):
         self.obj.add_item('ab',6000)
@@ -18,6 +18,7 @@ class TestShoppingCart(unittest.TestCase):
         self.obj.remove_item('ab')
         self.assertEqual(self.obj.item_count,0,'item not removed')
     
+    # def 
 
     
 

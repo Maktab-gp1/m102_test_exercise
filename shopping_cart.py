@@ -1,4 +1,5 @@
 class ShoppingCart:
+    
     def __init__(self, emp_discount=None):
         self.total = 0
         self.item_count = 0
