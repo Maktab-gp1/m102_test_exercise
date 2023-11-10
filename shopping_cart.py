@@ -26,7 +26,7 @@ class ShoppingCart:
 
     def mean_item_price(self):
         # Intentional mistake: Returning the item count instead of mean item price
-        return self.item_count
+        return self.total/self.item_count
 
     def median_item_price(self):
         # Intentional mistake: Incorrect calculation of median item price
