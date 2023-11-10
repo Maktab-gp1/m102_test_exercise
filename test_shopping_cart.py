@@ -14,6 +14,12 @@ class TestShoppingCart(unittest.TestCase):
         self.obj.add_item('ab',6000)
         self.assertGreater(self.obj.item_count , 0 , 'item not added')
     
+    def test_remove_item(self):
+        self.obj.remove_item('ab')
+        self.assertEqual(self.obj.item_count,0,'item not removed')
+    
+
+    
 
 if __name__ == "__main__":
     unittest.main()
