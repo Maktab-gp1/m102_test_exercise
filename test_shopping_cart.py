@@ -24,9 +24,9 @@ class TestShoppingCart(unittest.TestCase):
     def test_mean_item_price(self):
         self.obj.add_item('ab',4000)
         self.obj.add_item('mive',6000)
-        self.assertEqual(self.obj.total/self.obj.item_count,5000,'mean is not calculated')
+        self.assertEqual(self.obj.mean_item_price,5000,'mean is not calculated')
     
-    
+
 
         
 
